@@ -39,6 +39,7 @@ def search_phrase(browser, text):
 
 @then(parsers.parse('one of the results contains "{phrase}"'))
 def results_have_one(browser, phrase):
+    # Phrase can be changed on feature definition file
     xpath = "//div[@id='links']//*[contains(text(), '"+phrase+"')]"
     results = browser.find_elements(By.XPATH(xpath))
     assert len(results) > 0
