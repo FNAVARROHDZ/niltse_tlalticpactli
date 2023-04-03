@@ -22,7 +22,10 @@ def browser():
     # For this example, we will use Firefox
     # You can change this fixture to use other browsers, too.
     # A better practice would be to get browser choice from a config file.
-    b = webdriver.Firefox()
+
+    options = webdriver.FirefoxOptions()
+    options.headless = True
+    b = webdriver.Firefox(options=options)
     b.implicitly_wait(10)
     yield b
     b.quit()
