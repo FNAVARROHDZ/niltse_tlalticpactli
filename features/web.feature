@@ -19,9 +19,5 @@ Feature: DuckDuckGo Web Browsing
       """
       Ica xon ahuiyacan ihuinti xochitli, tomac mani, aya. Ma on te ya aquiloto xochicozquitl.
       In toquiappancaxochiuh, tla celia xochitli,cueponia xochitli.
-      Oncan nemi tototl, chachalaca, tlatohua, hahaya hual on quimatli teotl ichan, ohuaya, ohuaya
-      Zaniyo in toxochiuhica ica tonahuiyacan. Zaniyo in cuicatl, aya icaon pupulihui in amotlaocol.
-      In tepilhuan ica yehua, amelel on quiza, ohuaya, ohuaya Quiyocoya in Ipalnemohua,
-      aya qui ya hualtemohuiya moyocoyatzin, in ayahuailo xochitli, ica yehua amelel on quiza.
       """
-    Then one of the results contains "ahuiyacan"
+    Then one of the results contains "Nezahualcóyotl"
