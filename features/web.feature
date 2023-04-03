@@ -10,18 +10,18 @@ Feature: DuckDuckGo Web Browsing
 
 
   Scenario: Basic DuckDuckGo Search
-    When the user searches for "panda"
-    Then results are shown for "panda"
+    When the user searches for "elephant"
+    Then results are shown for "elephant"
 
 
   Scenario: Lengthy DuckDuckGo Search
     When the user searches for the phrase:
       """
-      When in the Course of human events, it becomes necessary for one people
-       to dissolve the political bands which have connected them with another,
-       and to assume among the powers of the earth, the separate and equal
-       station to which the Laws of Nature and of Nature's God entitle them,
-       a decent respect to the opinions of mankind requires that they should
-       declare the causes which impel them to the separation.
+      Ica xon ahuiyacan ihuinti xochitli, tomac mani, aya. Ma on te ya aquiloto xochicozquitl.
+      In toquiappancaxochiuh, tla celia xochitli,cueponia xochitli.
+      Oncan nemi tototl, chachalaca, tlatohua, hahaya hual on quimatli teotl ichan, ohuaya, ohuaya
+      Zaniyo in toxochiuhica ica tonahuiyacan. Zaniyo in cuicatl, aya icaon pupulihui in amotlaocol.
+      In tepilhuan ica yehua, amelel on quiza, ohuaya, ohuaya Quiyocoya in Ipalnemohua,
+      aya qui ya hualtemohuiya moyocoyatzin, in ayahuailo xochitli, ica yehua amelel on quiza.
       """
-    Then one of the results contains "Declaration of Independence"
+    Then one of the results contains "ahuiyacan"
