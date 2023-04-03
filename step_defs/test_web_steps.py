@@ -51,7 +51,7 @@ def search_results(browser, phrase):
     # (A more comprehensive test would check results for matching phrases)
     # (Check the list before the search phrase for correct implicit waiting)
     links_div = browser.find_element(By.ID, 'links')
-    assert len(links_div.find_elements(By.XPATH('//div'))) > 0
+    assert len(links_div.find_elements(By.XPATH, '//div')) > 0
     # Check search phrase
     search_input = browser.find_element(By.ID, 'search_form_input')
     assert search_input.get_attribute('value') == phrase
