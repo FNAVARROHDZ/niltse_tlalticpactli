@@ -11,7 +11,7 @@ Feature: DuckDuckGo Web Browsing
 
   Scenario: Basic DuckDuckGo Search
     When the user searches for "chimpance"
-    Then results are shown for "chimpace"
+    Then results are shown for "chimpance"
 
 
   Scenario: Lengthy DuckDuckGo Search
