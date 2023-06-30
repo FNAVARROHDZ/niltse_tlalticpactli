@@ -10,8 +10,8 @@ Feature: DuckDuckGo Web Browsing
 
 
   Scenario: Basic DuckDuckGo Search
-    When the user searches for "tiger"
-    Then results are shown for "tiger"
+    When the user searches for "panda"
+    Then results are shown for "panda"
 
 
   Scenario: Lengthy DuckDuckGo Search
