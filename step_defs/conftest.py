@@ -2,6 +2,7 @@ import pytest
 
 from pytest_bdd import given
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 
 
 # Constants
@@ -19,6 +20,7 @@ def pytest_bdd_step_error(request, feature, scenario, step, step_func, step_func
 
 @pytest.fixture
 def browser():
+    options = Options()
     options.add_argument('--headless')
     options.add_argument('--disable-dev-shm-usage')
     options.add_argument('---whitelisted-ips')
