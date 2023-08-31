@@ -16,5 +16,5 @@ def search_for(browser):
 
 @then('results are shown for "gherkin test case"')
 def search_results(browser):
-    links_div = browser.find_element(By.TAG_NAME, "li")
+    links_div = browser.find_elements(By.TAG_NAME, "li")
     assert len(links_div) > 0
