@@ -4,8 +4,7 @@ Feature: DuckDuckGo Search
   So that I can find what I am looking for
 
   Scenario: Search for information
-    Given I am on the DuckDuckGo homepage
-    When I enter "gherkin test case" into the search box
-    And I click the search button
-    Then I should see a list of search results
+    Given the DuckDuckGo home page is displayed
+    When the user searches for "gherkin test case"
+    Then results are shown for "gherkin test case"
 
