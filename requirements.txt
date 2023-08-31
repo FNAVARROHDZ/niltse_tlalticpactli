@@ -1,3 +1,4 @@
 requests
 selenium
 pytest-bdd
+allure-pytest-bdd
