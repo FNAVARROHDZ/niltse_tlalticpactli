@@ -1,7 +1,7 @@
 from pytest_bdd import scenarios, given, when, then
 from selenium.webdriver.common.keys import Keys
 
-scenarios('../features/duckduckgo_search.feature')
+scenarios('../features/web.feature')
 
 @given('the DuckDuckGo home page is displayed')
 def ddg_home(browser):
